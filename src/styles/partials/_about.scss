@@ -1,0 +1,17 @@
+
+.about {
+    display: flex;
+    .aboutContent {
+        width: 50%;
+    }
+    .photo {
+        width: 50%;
+        height: 55rem;
+        img {
+            height: inherit;
+            width: 60rem;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+    }
+}

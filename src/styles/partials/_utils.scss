@@ -1,0 +1,66 @@
+$primary: #181d81;
+$secondary: #36dba9;
+$background: #f2f3f5;
+
+html {
+    font-size: 63.5%;
+}
+
+body {
+    font-size: 1.8rem;
+    font-family: 'Poppins', sans-serif;
+    margin: 3rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+.wrapper {
+    width: 110rem;
+    margin: 0 auto;
+}
+
+section {
+    padding: 6rem 0;
+}
+
+.button {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.4rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0.8rem 6rem;
+    border-radius: 3rem;
+}
+
+.greenButton {
+    background: $secondary;
+    color: $primary;
+    border: 0.2rem solid $secondary;
+    &:hover {
+        background: none;
+    }
+}
+
+.blueButton {
+    background: white;
+    color: $primary;
+    border: 0.2rem solid $primary;
+    &:hover {
+        background: $primary;
+        color: white;
+    }
+}
+
+.builtWith img {
+    width: 5%;
+}
+
+figure img {
+    width: 5%;
+}
+
+.social img {
+    width: 5%;
+}
