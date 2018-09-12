@@ -1,0 +1,26 @@
+
+.blogPosts {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    a{
+        text-decoration: none;
+        color: white;
+        padding: 3rem;
+    }
+}
+
+.blogCard {
+    width: 20%;
+    display: flex;
+}
+
+.blueCard {
+    background: $primary;
+    flex-direction: column;
+}
+
+.greenCard {
+    background: $secondary;
+    flex-direction: column-reverse;
+}

@@ -1,0 +1,33 @@
+.projects {
+    background: $background;
+    article {
+        margin: 4rem 0;
+        display: flex;
+        .projectContent {
+            width: 50%;
+        }
+        .projectImage {
+            width: 50%;
+            height: 20rem;
+            background: $darkNeutral;
+        }
+    }
+}
+
+.left {
+    flex-direction: row-reverse;
+    .projectContent {
+        margin-left: 2rem;
+    }
+    .projectImage {
+        margin-right: 2rem;
+    }
+}
+.right {
+    .projectContent {
+        margin-right: 2rem;
+    }
+    .projectImage {
+        margin-left: 2rem;
+    }
+}

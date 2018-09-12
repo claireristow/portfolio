@@ -1,6 +1,7 @@
 $primary: #181d81;
 $secondary: #36dba9;
 $background: #f2f3f5;
+$darkNeutral: #a7a7a7;
 
 html {
     font-size: 63.5%;
@@ -28,6 +29,7 @@ section {
 .button {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.4rem;
+    font-weight: 700;
     text-decoration: none;
     text-transform: uppercase;
     padding: 0.8rem 6rem;
@@ -36,7 +38,7 @@ section {
 
 .greenButton {
     background: $secondary;
-    color: $primary;
+    color: black;
     border: 0.2rem solid $secondary;
     &:hover {
         background: none;
@@ -54,10 +56,6 @@ section {
 }
 
 .builtWith img {
-    width: 5%;
-}
-
-figure img {
     width: 5%;
 }
 

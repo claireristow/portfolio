@@ -1,0 +1,19 @@
+
+.skillsGrid {
+    display: flex;
+    flex-wrap: wrap;
+    figure {
+        margin: 2rem 2rem;
+        width: calc(20% - 4rem);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 50%;
+        }
+        figcaption {
+            font-size: 2rem;
+        }
+    }
+}
