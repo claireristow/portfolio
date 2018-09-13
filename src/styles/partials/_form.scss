@@ -1,0 +1,54 @@
+.formFlex {
+    display: flex;
+}
+
+.formBlurb {
+    font-weight: 300;
+    line-height: 1.8;
+    width: 30%;
+    background:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), $primary;
+    color: white;
+    padding: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    width: 70%;
+    background: $primary;
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    input, textarea {
+        width: 100%;
+        font-size: 1.4rem;
+        background: $input;
+        border: none;
+        margin: 1rem 0;
+        padding: 1rem 1.5rem;
+        &::placeholder {
+            color: $darkNeutral;
+        }
+        &::-moz-placeholder {
+            opacity: 1;
+        }
+        &:focus {
+            border-bottom: 0.2rem solid $darkNeutral;
+        }
+    }
+}
+
+textarea {
+    resize: none;
+}
+
+input[type=submit] {
+    width: 30%;
+    padding: 1rem 3rem;
+    color: white;
+    border: 0.2rem solid white;
+    &:hover, :active {
+        background:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), $primary;
+    }
+}

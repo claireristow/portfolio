@@ -1,0 +1,52 @@
+
+footer {
+    background: $background;
+    padding: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+// NAVIGATION
+
+nav a {
+    font-size: 1.4rem;
+    padding: 0 1rem;
+    border-right: 0.1rem solid $darkNeutral;
+    color: $textGrey;
+    &:hover {
+        color: $primary;
+    }
+}
+nav li:last-child a {
+    border: none;
+}
+
+// SOCIAL
+
+.social a {
+    padding: 0.7rem 1rem;
+    margin: 0 0.5rem;
+    background: white;
+    border-radius: 50%;
+    &:hover, :active {
+        background: $primary;
+    }
+    &:hover i, :active i {
+        color: white;
+    }
+    i {
+        color: $textGrey;
+    }
+}
+
+// COPYRIGHT
+
+.copyright, .copyright a{
+    font-size: 1.4rem;
+    color: $textGrey;
+}
+
+.copyright a:hover {
+    color: $primary;
+}

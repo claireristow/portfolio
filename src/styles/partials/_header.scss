@@ -6,10 +6,13 @@ header {
     padding: 0 3rem;
 }
 
-nav {
+.nav {
     display: flex;
     justify-content: space-between;
-    align-content: center;
+    align-items: center;
+    p {
+        color: white;
+    }
 }
 
 .logo {

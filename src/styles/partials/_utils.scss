@@ -1,7 +1,9 @@
 $primary: #181d81;
+$input:#30348e;
 $secondary: #36dba9;
 $background: #f2f3f5;
 $darkNeutral: #a7a7a7;
+$textGrey: #858585;
 
 html {
     font-size: 63.5%;
@@ -15,6 +17,22 @@ body {
 
 img {
     max-width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
 }
 
 .wrapper {
@@ -32,7 +50,8 @@ section {
     font-weight: 700;
     text-decoration: none;
     text-transform: uppercase;
-    padding: 0.8rem 6rem;
+    letter-spacing: 0.2rem;
+    padding: 1rem 6rem;
     border-radius: 3rem;
 }
 
@@ -56,9 +75,5 @@ section {
 }
 
 .builtWith img {
-    width: 5%;
-}
-
-.social img {
     width: 5%;
 }
