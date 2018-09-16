@@ -1,9 +1,13 @@
 
+.blog {
+    background: url('../../assets/backgrounds/grey-dots.png');
+}
+
 .blogPosts {
     display: flex;
     flex-direction: row-reverse;
     flex-wrap: wrap;
-    a{
+    a {
         text-decoration: none;
         color: white;
         padding: 3rem;

@@ -50,8 +50,10 @@ section {
     font-weight: 700;
     text-decoration: none;
     text-transform: uppercase;
+    text-align: center;
     letter-spacing: 0.2rem;
-    padding: 1rem 6rem;
+    padding: 1rem;
+    width: 20rem;
     border-radius: 3rem;
 }
 
@@ -72,8 +74,4 @@ section {
         background: $primary;
         color: white;
     }
-}
-
-.builtWith img {
-    width: 5%;
 }

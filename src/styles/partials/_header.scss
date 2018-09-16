@@ -3,31 +3,99 @@ header {
     background: $primary;
     color: white;
     height: calc(100vh - 6rem);
-    padding: 0 3rem;
+    // padding: 0 3rem;
 }
+
+// NAV BAR
 
 .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+    width: 100%;
+    padding: 0 3rem;
     p {
         color: white;
     }
-}
-
-.logo {
-    color: $secondary;
-    font-weight: 700;
-    font-size: 2.5rem;
-}
-
-.menu {
-    font-size: 1.4rem;
-    font-weight: 300;
-    img {
-        padding-left: 1rem;
+    .logo {
+        color: $secondary;
+        font-weight: 700;
+        font-size: 2.5rem;
+    }
+    label[for=toggle] {
+        font-size: 1.4rem;
+        font-weight: 300;
+        color: white;
+        background: rgba(24, 29, 129, 0.6);
+        img {
+            padding-left: 1rem;
+        }
     }
 }
+
+.sticky {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 14rem;
+    padding: 3rem;
+    margin-right: 3rem;
+}
+
+// HAMBURGER MENU
+
+.menu {
+    display: flex;
+    flex-direction: column;
+	background: rgba(0, 0, 0, 0.8);
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	font-size: 4rem;
+	width: 30%;
+	position: fixed;
+	top: 0;
+	right: -30%;
+	bottom: 0;
+	z-index: 10;
+    transition: all .5s;
+    li:first-child {
+        align-self: flex-end;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    label[for=toggle] {
+        padding: 2rem;
+        font-size: 3rem;
+    }
+    a {
+        color: white;
+        padding: 2rem;
+        border-bottom: 0.1rem solid grey;
+        display: block;
+        &:hover {
+            background: rgba(24, 29, 129, 0.6);
+        }
+    }
+}
+
+input#toggle:checked + ul.menu {
+	/* hide or show */
+	right: 0;
+}
+
+input#toggle:checked ~ .wrapper {
+	left: -30%;
+	transition: all .5s;
+}
+
+input#toggle {
+	display: none;
+}
+
+// HERO
 
 .hero {
     width: 100%;
@@ -36,6 +104,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    // position: absolute;
     h1 {
         width: 30%;
     }

@@ -1,5 +1,6 @@
 
 .skillsGrid {
+    margin-top: 2rem;
     display: flex;
     flex-wrap: wrap;
     figure {
@@ -9,11 +10,20 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        img {
-            width: 50%;
+        i {
+            font-size: 6rem;
+            color: $primary;
+        }
+        svg {
+            width: 6rem;
+            // filter: grayscale(100%);
+            fill: $primary;
+            // color: black;
         }
         figcaption {
             font-size: 2rem;
+            text-align: center;
+            color: $primary;
         }
     }
 }

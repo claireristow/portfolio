@@ -6,18 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Poppins:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
         crossorigin="anonymous">
     <link rel="stylesheet" href="public/styles/style.css">
     <title>Claire | Portfolio</title>
-</head>
+</head> 
 
 <body>
-    <header>
-        <a href="#" class="nav">
+    <header id="home">
+        <input type="checkbox" id="toggle" name="toggle">
+        <ul class="menu">
+            <li><label for="toggle"><i class="fas fa-times"></i></label></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <nav class="nav">
             <p class="logo">Claire</p>
-            <p class="menu">Menu<img src="assets/hamburger.svg" alt="hamburger menu"></p>
-        </a>
+            <label for="toggle" id="nav">Menu<img src="assets/hamburger.svg" alt="hamburger menu"></label>
+        </nav>
         <div class="hero">
             <h1>Claire Ristow</h1>
             <p>Web Developer.</p>
@@ -26,7 +37,7 @@
 
     <main>
 
-        <section class="wrapper">
+        <section class="wrapper" id="about">
             <div class="about">
                 <div class="aboutContent">
                     <div class="line"></div>
@@ -36,7 +47,7 @@
                         of seemingly conflicting interests. My newest and most consuming passion is web development.
                         With my experiences at HackerYou, I have discovered that I love telling stories through the
                         websites that I build.</p>
-                    <a href="#" role="button" class="button greenButton">Say Hello!</a>
+                    <a href="#contact" role="button" class="button greenButton">Say Hello!</a>
                 </div>
                 <div class="photo">
                     <img src="assets/2-med.jpg" alt="Claire sitting in HackerYou's famous red chair">
@@ -44,47 +55,30 @@
             </div>
         </section>
 
-        <section class="projects">
+        <section class="projects" id="projects">
             <div class="wrapper">
                 <div class="line"></div>
                 <p class="subheading">03 - What I've been working on</p>
                 <h2>Projects</h2>
-                <article class="left">
-                    <div class="projectContent">
-                        <h3>Project Name</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus illo at explicabo! Eligendi sit
-                            quaerat animi minus amet, at corporis.</p>
-                        <div class="builtWith">
-                            <img src="assets/builtWith/css3.svg" alt="CSS 3 logo">
-                            <img src="assets/builtWith/html5.svg" alt="HTML 5 logo">
-                            <img src="assets/builtWith/gulp.svg" alt="gulp logo">
-                            <img src="assets/builtWith/react.svg" alt="react logo">
-                            <img src="assets/builtWith/sass.svg" alt="sass logo">
-                            <img src="assets/builtWith/js.svg" alt="javascript logo">
-                            <img src="assets/builtWith/jquery.svg" alt="jquery logo">
-                        </div>
-                        <a href="#" role="button" class="button blueButton">View Live</a>
-                    </div>
-                    <div class="projectImage">
-                        <!-- <img src="" alt=""> -->
-                    </div>
-                </article>
                 <article class="right">
                     <div class="projectContent">
-                        <h3>Project Name</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus illo at explicabo! Eligendi sit
-                            quaerat animi minus
-                            amet, at corporis.</p>
+                        <h3>StumbleGrumble</h3>
+                        <p>An app that finds the nearest restaurants to the user. Name and logo inspired by the late-night food seeker. Layout
+                        built with floats only. Credits to my wonderful project partners, Jesse Huynh and Moin Gani.</p>
                         <div class="builtWith">
-                            <img src="assets/builtWith/css3.svg" alt="CSS 3 logo">
-                            <img src="assets/builtWith/html5.svg" alt="HTML 5 logo">
-                            <img src="assets/builtWith/gulp.svg" alt="gulp logo">
-                            <img src="assets/builtWith/react.svg" alt="react logo">
-                            <img src="assets/builtWith/sass.svg" alt="sass logo">
-                            <img src="assets/builtWith/js.svg" alt="javascript logo">
-                            <img src="assets/builtWith/jquery.svg" alt="jquery logo">
+                            <p>HTML</p>
+                            <p>SCSS</p>
+                            <p>React</p>
+                            <p>JavaScript</p>
+                            <p>Places API</p>
+                            <p>Place Details API</p>
+                            <p>Geolocation API</p>
+                            <p>Directions API</p>
                         </div>
-                        <a href="#" role="button" class="button greenButton">View Live</a>
+                        <div class="projectLinks">
+                            <a href="https://stumblegrumble-a293b.firebaseapp.com/" role="button" class="button blueButton">View Live</a>
+                            <a href="https://github.com/StumbleGrumble/claire_jesse_moin_stumble_grumble_project6" role="button" class="button greenButton">View GitHub</a>
+                        </div>
                     </div>
                     <div class="projectImage">
                         <!-- <img src="" alt=""> -->
@@ -92,20 +86,21 @@
                 </article>
                 <article class="left">
                     <div class="projectContent">
-                        <h3>Project Name</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus illo at explicabo! Eligendi sit
-                            quaerat animi minus
-                            amet, at corporis.</p>
+                        <h3>Reading List</h3>
+                        <p>Book lovers unite! Search for and store your next reads on this simple and intuitive app.</p>
                         <div class="builtWith">
-                            <img src="assets/builtWith/css3.svg" alt="CSS 3 logo">
-                            <img src="assets/builtWith/html5.svg" alt="HTML 5 logo">
-                            <img src="assets/builtWith/gulp.svg" alt="gulp logo">
-                            <img src="assets/builtWith/react.svg" alt="react logo">
-                            <img src="assets/builtWith/sass.svg" alt="sass logo">
-                            <img src="assets/builtWith/js.svg" alt="javascript logo">
-                            <img src="assets/builtWith/jquery.svg" alt="jquery logo">
+                            <p>HTML</p>
+                            <p>SCSS</p>
+                            <p>React</p>
+                            <p>JavaScript</p>
+                            <p>Firebase</p>
+                            <p>Goodreads API</p>
                         </div>
-                        <a href="#" role="button" class="button blueButton">View Live</a>
+                        <div class="projectLinks">
+                            <a href="https://reading-list-43c32.firebaseapp.com/" role="button" class="button blueButton">View Live</a>
+                            <a href="https://github.com/claireristow/claire_ristow_project5" role="button" class="button greenButton">View GitHub</a>
+                        </div>
+                        
                     </div>
                     <div class="projectImage">
                         <!-- <img src="" alt=""> -->
@@ -113,21 +108,59 @@
                 </article>
                 <article class="right">
                     <div class="projectContent">
-                        <h3>Project Name</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus illo at explicabo! Eligendi sit
-                            quaerat animi minus
-                            amet, at corporis.</p>
+                        <h3>Word Scramble</h3>
+                        <p>Inspired by Boggle, this fun word searching game gives the user 1.5 minutes to find as many words as they can. Credit
+                        to my project partner Bahareh Adham, a killer dev.</p>
                         <div class="builtWith">
-                            <img src="assets/builtWith/css3.svg" alt="CSS 3 logo">
-                            <img src="assets/builtWith/html5.svg" alt="HTML 5 logo">
-                            <img src="assets/builtWith/gulp.svg" alt="gulp logo">
-                            <img src="assets/builtWith/react.svg" alt="react logo">
-                            <img src="assets/builtWith/sass.svg" alt="sass logo">
-                            <img src="assets/builtWith/js.svg" alt="javascript logo">
-                            <img src="assets/builtWith/jquery.svg" alt="jquery logo">
-                            <img src="assets/builtWith/firebase.svg" alt="firebase logo">
+                            <p>HTML</p>
+                            <p>SCSS</p>
+                            <p>JavaScript</p>
+                            <p>Gulp</p>
+                            <p>Merriam-Webster API</p>
                         </div>
-                        <a href="#" role="button" class="button greenButton">View Live</a>
+                        <div class="projectLinks">
+                            <a href="https://claireristow.github.io/Bahareh-Claire_ProjectFour/" role="button" class="button blueButton">View Live</a>
+                            <a href="https://github.com/TheTravelBugs/Bahareh-Claire_ProjectFour" role="button" class="button greenButton">View GitHub</a>
+                        </div>
+                    </div>
+                    <div class="projectImage">
+                        <!-- <img src="" alt=""> -->
+                    </div>
+                </article>
+                <article class="left">
+                    <div class="projectContent">
+                        <h3>Find Your Trail</h3>
+                        <p>Find Your Trail helps to narrow down your decision of which day-hike to take for your next trip to Algonquin
+                        Park.</p>
+                        <div class="builtWith">
+                            <p>HTML</p>
+                            <p>SCSS</p>
+                            <p>jQuery</p>
+                        </div>
+                        <div class="projectLinks">
+                            <a href="https://claireristow.github.io/claire_ristow_project3/" role="button" class="button blueButton">View
+                                Live</a>
+                            <a href="https://github.com/claireristow/claire_ristow_project3" role="button" class="button greenButton">View GitHub</a>
+                        </div>
+                    </div>
+                    <div class="projectImage">
+                        <!-- <img src="" alt=""> -->
+                    </div>
+                </article>
+                <article class="right">
+                    <div class="projectContent">
+                        <h3>Corporate</h3>
+                        <p>Corporate is a sleek and polished pixel perfect PSD conversion. It uses flexbox and the BEM naming convention.</p>
+                        <div class="builtWith">
+                            <p>HTML</p>
+                            <p>SCSS</p>
+                            <p>PSD Conversion</p>
+                        </div>
+                        <div class="projectLinks">
+                            <a href="https://claireristow.github.io/claireRistow_project2/" role="button" class="button blueButton">View Live</a>
+                            <a href="https://github.com/claireristow/claireRistow_project2" role="button" class="button greenButton">View
+                                GitHub</a>
+                        </div>
                     </div>
                     <div class="projectImage">
                         <!-- <img src="" alt=""> -->
@@ -136,53 +169,85 @@
             </div>
         </section>
 
-        <section class="skills">
+        <section class="skills" id="skills">
             <div class="wrapper">
                 <div class="line"></div>
                 <p class="subheading">04 - What I've learned</p>
                 <h2>Skills</h2>
                 <div class="skillsGrid">
                     <figure>
-                        <img src="assets/builtWith/css3.svg" alt="CSS 3 logo">
+                        <i class="devicon-css3-plain"></i>
                         <figcaption>CSS3</figcaption>
                     </figure>
                     <figure>
-                        <img src="assets/builtWith/html5.svg" alt="HTML 5 logo">
+                        <i class="devicon-html5-plain"></i>
                         <figcaption>HTML5</figcaption>
                     </figure>
                     <figure>
-                        <img src="assets/builtWith/gulp.svg" alt="gulp logo">
+                        <i class="devicon-gulp-plain"></i>
                         <figcaption>Gulp</figcaption>
                     </figure>
                     <figure>
-                        <img src="assets/builtWith/react.svg" alt="react logo">
+                        <i class="devicon-react-original"></i>
                         <figcaption>React</figcaption>
                     </figure>
                     <figure>
-                        <img src="assets/builtWith/sass.svg" alt="sass logo">
+                        <i class="devicon-sass-original"></i>
                         <figcaption>Sass</figcaption>
                     </figure>
                     <figure>
-                        <img src="assets/builtWith/js.svg" alt="javascript logo">
+                        <i class="devicon-javascript-plain"></i>
                         <figcaption>JavaScript</figcaption>
                     </figure>
                     <figure>
-                        <img src="assets/builtWith/jquery.svg" alt="jquery logo">
+                        <i class="devicon-jquery-plain"></i>
                         <figcaption>jQuery</figcaption>
                     </figure>
                     <figure>
-                        <img src="assets/builtWith/firebase.svg" alt="firebase logo">
+                        <svg viewBox="0 0 256 351" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            preserveAspectRatio="xMidYMid">
+                            <defs>
+                                <path d="M1.25273437,280.731641 L2.85834533,277.600858 L102.211177,89.0833546 L58.0613266,5.6082033 C54.3920011,-1.28304578 45.0741245,0.473674398 43.8699203,8.18789086 L1.25273437,280.731641 Z"
+                                    id="path-1"></path>
+                                <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
+                                    <feGaussianBlur stdDeviation="17.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+                                    <feOffset dx="0" dy="0" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+                                    <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+                                    <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.06 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+                                </filter>
+                                <path d="M134.417103,148.974235 L166.455722,116.161738 L134.417104,55.1546874 C131.374828,49.3635911 123.983911,48.7568362 120.973828,54.5646483 L103.26875,88.6738296 L102.739423,90.4175473 L134.417103,148.974235 Z"
+                                    id="path-3"></path>
+                                <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-4">
+                                    <feGaussianBlur stdDeviation="3.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+                                    <feOffset dx="1" dy="-9" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+                                    <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+                                    <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.09 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+                                </filter>
+                            </defs>
+                            <g>
+                                <path d="M0,282.99762 L2.12250746,280.0256 L102.527363,89.5119284 L102.739423,87.4951323 L58.478806,4.35817711 C54.7706269,-2.60604179 44.3313035,-0.845245771 43.1143483,6.95065473 L0,282.99762 Z"></path>
+                                <path d="M135.004975,150.380704 L167.960199,116.629461 L134.995423,53.6993114 C131.866109,47.7425353 123.128817,47.7253411 120.032618,53.6993112 L102.421015,87.2880848 L102.421015,90.1487443 L135.004975,150.380704 Z"></path>
+                                <polygon points="0 282.99762 0.962097168 282.030396 4.45771144 280.60956 132.935323 152.60956 134.563025 148.178595 102.513123 87.1048584"></polygon>
+                                <path d="M139.120971,347.551268 L255.395916,282.703666 L222.191698,78.2093373 C221.153051,71.8112478 213.303658,69.2818149 208.724314,73.8694368 L0.000254726368,282.997875 L115.608454,347.545536 C122.914643,351.624979 131.812872,351.62689 139.120971,347.551268"></path>
+                                <path d="M254.354084,282.159837 L221.401937,79.2179369 C220.371175,72.8684188 213.843792,70.2409553 209.299213,74.79375 L1.28945312,282.600785 L115.627825,346.509458 C122.878548,350.557931 131.709226,350.559827 138.961846,346.515146 L254.354084,282.159837 Z"></path>
+                                <path d="M139.120907,345.64082 C131.812808,349.716442 122.914579,349.714531 115.60839,345.635089 L0.93134768,282.014551 L0.000191044776,282.997875 L115.60839,347.545536 C122.914579,351.624979 131.812808,351.62689 139.120907,347.551268 L255.395853,282.703666 L255.111196,280.951785 L139.120907,345.64082 Z"></path>
+                            </g>
+                        </svg>
                         <figcaption>Firebase</figcaption>
                     </figure>
                     <figure>
-                        <img src="assets/social/github-brands.svg" alt="github logo">
+                        <i class="devicon-github-plain"></i>
                         <figcaption>GitHub</figcaption>
+                    </figure>
+                    <figure>
+                        <i class="fas fa-object-group"></i>
+                        <figcaption>Responsive Design</figcaption>
                     </figure>
                 </div>
             </div>
         </section>
 
-        <section class="blog">
+        <section class="blog" id="blog">
             <div class="wrapper">
                 <div class="line"></div>
                 <p class="subheading">05 - What I've written</p>
@@ -211,14 +276,14 @@
             </div>
         </section>
 
-        <section class="contact">
+        <section class="contact" id="contact">
             <div class="wrapper">
                 <div class="line"></div>
                 <p class="subheading">06 - Say hello</p>
                 <h2>Get In Touch</h2>
                 <div class="formFlex">
                     <div class="formBlurb">
-                        <p>Please reach out if you are interested in working together, have any questions for me, or would just like to say hello! I'm always happy to make new connections.</p>
+                        <p>Please reach out if you are interested in working together, have any questions for me, or would just like to say hello! I'm always happy to chat.</p>
                     </div>
                     <form>
                         <label for="name" class="visuallyhidden">Name</label>
@@ -283,7 +348,7 @@
         <p class="copyright">&copy; 2018 Claire Ristow | Photo by <a href="https://pamlau.com/">Pam Lau</a></p>
     </footer>
 
-    <script src="public/script.js"></script>
+    <script src="public/scripts/app.js"></script>
 </body>
 
 </html>
