@@ -1,14 +1,14 @@
 .projects {
     background: $background;
     article {
-        margin: 4rem 0;
+        margin: 12rem 0;
         display: flex;
         .projectContent {
             width: 50%;
         }
         .projectImage {
             width: 50%;
-            background: $darkNeutral;
+            // background: $darkNeutral;
         }
     }
 }

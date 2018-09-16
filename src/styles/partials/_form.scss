@@ -1,13 +1,12 @@
 .formFlex {
     display: flex;
-    box-shadow: 0.1rem 0.1rem 2.2rem;
+    box-shadow: 0.8rem 0.8rem 1rem 0rem #5e5e5e;
 }
 
 .formBlurb {
     font-weight: 300;
     line-height: 1.8;
     width: 30%;
-    // border-radius: 0.5rem 0 0 0.5rem;
     background:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), $primary;
     color: white;
     padding: 4rem;
