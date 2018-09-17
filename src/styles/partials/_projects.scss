@@ -3,12 +3,17 @@
     article {
         margin: 12rem 0;
         display: flex;
+        align-items: center;
         .projectContent {
             width: 50%;
+            display: flex;
+            flex-direction: column;
         }
         .projectImage {
             width: 50%;
-            // background: $darkNeutral;
+            img {
+                z-index: 9;
+            }
         }
     }
 }
@@ -16,18 +21,30 @@
 .left {
     flex-direction: row-reverse;
     .projectContent {
-        margin-left: 2rem;
+        margin-left: 4rem;
     }
     .projectImage {
-        margin-right: 2rem;
+        margin-right: 4rem;
     }
 }
 .right {
     .projectContent {
-        margin-right: 2rem;
+        align-items: flex-end;
+        text-align: right;
+        margin-right: 4rem;
     }
     .projectImage {
-        margin-left: 2rem;
+        margin-left: 4rem;
+    }
+}
+
+.blueDots {
+    position: relative;
+    &::before {
+        content: url('../../assets/backgrounds/smallBlueDots.png');
+        position: absolute;
+        top: -100%;
+        left: 0;
     }
 }
 
