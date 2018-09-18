@@ -14,6 +14,10 @@
             img {
                 z-index: 8;
             }
+            &:hover {
+                transform: scale(1.05);
+                transition: transform 0.5s;
+            }
         }
     }
 }
@@ -68,22 +72,24 @@
 }
 
 .builtWith {
-    font-size: 1.6rem;
-    color: $primary;
+    font-size: 1.4rem;
+    color: black;
     margin-bottom: 2rem;
     display: flex;
     flex-wrap: wrap;
     p {
-        padding: 1rem;
-        margin: 0.3rem;
-        border: 0.1rem solid $primary;
-        border-radius: 0.5rem;
+        padding: 0.5rem 1.5rem;
+        border-right: 0.1rem solid black;
+        &:last-child {
+            border: none;
+        }
     }
+    
 }
 
 @media (max-width: 940px) {
     .projects article {
-        flex-direction: column;
+        flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
         text-align: center;
@@ -148,6 +154,10 @@
 
     .projects article:last-child {
         display: none;
+    }
+
+    .builtWith p {
+        padding: 0 0.5rem;
     }
 }
 

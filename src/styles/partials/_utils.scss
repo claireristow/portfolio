@@ -49,6 +49,7 @@ p.logo {
     font-weight: 700;
     font-size: 2.5rem;
     margin: 0;
+    text-transform: lowercase;
 }
 
 .button {
@@ -80,6 +81,10 @@ p.logo {
         background: $primary;
         color: white;
     }
+}
+
+.hide {
+    display: none;
 }
 
 @media (max-width: 1180px) {

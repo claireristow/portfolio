@@ -19,3 +19,15 @@ function myFunction() {
 $(function () {
     new WOW().init();
 });
+
+// When screen hits 940px, hide the h3 in projectContent and unhide it in projectImage
+
+const projectView = () => {
+    const deviceWidth = window.innerWidth;
+    if (deviceWidth < 940) {
+        document.querySelector('.projectContent h3').classList.add('hide');
+        document.querySelector('.projectImage h3').classList.remove('hide');
+    }
+}
+
+projectView();
