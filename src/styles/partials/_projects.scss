@@ -38,15 +38,27 @@
     }
 }
 
-.blueDots {
-    position: relative;
-    &::before {
-        content: url('../../assets/backgrounds/smallBlueDots.png');
-        position: absolute;
-        top: -100%;
-        left: 0;
-    }
-}
+// .blueDots {
+//     position: relative;
+//     &::before {
+//         content: url('../../assets/backgrounds/smallBlueDots.png');
+//         position: absolute;
+//         top: -100%;
+//         left: 0;
+//     }
+// }
+
+// .blueDots {
+//     position: relative;
+//     .dots {
+//         background: url('../../assets/backgrounds/smallBlueDots.png');
+//         width: 80rem;
+//         height: 50rem;
+//         position: absolute;
+//         top: -40%;
+//         // right: -40%;
+//     }
+// }
 
 .projectLinks {
     display: flex;
@@ -66,5 +78,54 @@
         margin: 0.3rem;
         border: 0.1rem solid $primary;
         border-radius: 0.5rem;
+    }
+}
+
+@media (max-width: 940px) {
+    .projects article {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        .projectContent {
+            width: 100%;
+            text-align: center;
+            h3 {
+                width: 100%;
+                text-align: center;
+            }
+        }
+        .projectImage {
+            margin-top: 2rem;
+            width: 50%;
+        }
+    }
+
+    .left {
+        flex-direction: row-reverse;
+        .projectContent {
+            margin: 0;
+        }
+        .projectImage {
+            margin: 0;
+        }
+    }
+    .right {
+        .projectContent {
+            align-items: center;
+            margin: 0;
+        }
+        .projectImage {
+            margin:0;
+        }
+    }
+
+    .projectLinks {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .builtWith {
+        justify-content: center;
     }
 }

@@ -10,7 +10,7 @@ const reload = browserSync.reload;
 
 gulp.task('styles', () => {
     return gulp.src('./src/styles/**/*.scss')
-        .pipe(sass())
+        .pipe(sass().on('error', sass.logError))
         .pipe(concat('style.css'))
         .pipe(gulp.dest('./public/styles/'))
         .pipe(reload({stream:true}));

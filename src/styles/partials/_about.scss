@@ -3,15 +3,50 @@
     display: flex;
     .aboutContent {
         width: 50%;
+        .button {
+            padding:1rem 3.5rem;
+        }
     }
     .photo {
         width: 50%;
-        height: 55rem;
+        height: 50rem;
+        margin-left: 1rem;
         img {
             height: inherit;
             width: 60rem;
             object-fit: cover;
             border-radius: 50%;
         }
+    }
+}
+
+@media (max-width: 1180px) {
+    .about .photo {
+        height: 40rem;
+        margin-left: 2rem;
+    }
+}
+
+@media (max-width: 940px) {
+    .about {
+        flex-direction: column-reverse;
+        align-items: center;
+        position: relative;
+        .aboutContent {
+            width: 100%;
+        }
+        .photo {
+            width: 30%;
+            height: 18rem;
+            position: absolute;
+            top: -15%;
+            right: 15%;
+        }
+    }
+}
+
+@media (max-width: 660px) {
+    .about .photo {
+        position: static;
     }
 }

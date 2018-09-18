@@ -14,3 +14,8 @@ function myFunction() {
         header.classList.remove("sticky");
     }
 }
+
+// animated transitions on scroll 
+$(function () {
+    new WOW().init();
+});

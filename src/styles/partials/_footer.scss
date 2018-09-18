@@ -3,6 +3,7 @@ footer {
     background: $background;
     padding: 5rem;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
@@ -45,8 +46,24 @@ nav li:last-child a {
 .copyright, .copyright a{
     font-size: 1.4rem;
     color: $textGrey;
+    margin: 0;
 }
 
 .copyright a:hover {
     color: $primary;
+}
+
+@media (max-width: 1200px) {
+    footer nav {
+        display: none;
+    }
+}
+
+@media (max-width: 750px) {
+    footer {
+        flex-direction: column;
+    }
+    .social {
+        margin: 2.5rem 0;
+    }
 }

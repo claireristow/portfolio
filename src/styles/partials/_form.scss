@@ -45,11 +45,25 @@ textarea {
 }
 
 input[type=submit] {
-    width: 30%;
     padding: 1rem 3rem;
     color: white;
     border: 0.2rem solid white;
     &:hover, :active {
         background:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), $primary;
+    }
+}
+
+@media (max-width: 940px) {
+    .formFlex {
+        flex-direction: column;
+        margin-top: 2rem;
+    }
+
+    .formBlurb {
+        width: 100%;
+    }
+
+    form {
+        width: 100%;
     }
 }

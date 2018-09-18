@@ -8,6 +8,7 @@
     flex-direction: row-reverse;
     flex-wrap: wrap;
     height: 50rem;
+    margin-top: 2rem;
     a {
         text-decoration: none;
         color: white;
@@ -32,4 +33,16 @@
 .greenCard {
     background: $secondary;
     flex-direction: column-reverse;
+}
+
+@media (max-width: 1180px) {
+    .blogCard {
+        width: 28%;
+    }
+}
+
+@media (max-width: 940px) {
+    .blogCard {
+        width: 33.33%;
+    }
 }

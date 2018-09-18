@@ -36,7 +36,7 @@ a {
 }
 
 .wrapper {
-    width: 110rem;
+    width: 100rem;
     margin: 0 auto;
 }
 
@@ -44,8 +44,14 @@ section {
     padding: 10rem 0;
 }
 
+p.logo {
+    color: $secondary;
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin: 0;
+}
+
 .button {
-    font-family: 'Open Sans', sans-serif;
     font-size: 1.4rem;
     font-weight: 700;
     text-decoration: none;
@@ -73,5 +79,21 @@ section {
     &:hover {
         background: $primary;
         color: white;
+    }
+}
+
+@media (max-width: 1180px) {
+    .wrapper {
+        width: 80rem;
+    }
+}
+
+@media (max-width: 940px) {
+    body {
+        margin: 1.5rem;
+    }
+
+    .wrapper {
+        width: 60rem;
     }
 }
