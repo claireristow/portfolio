@@ -46,3 +46,22 @@
         width: 33.33%;
     }
 }
+
+@media (max-width: 640px) {
+    .blogPosts {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: auto;
+    }
+
+    .blogCard {
+        width: 80%;
+        height: auto;
+    }
+}
+
+@media (max-width: 500px) {
+    .blog {
+        display: none;
+    }
+}

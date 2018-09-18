@@ -36,6 +36,7 @@ header {
     width: 14rem;
     padding: 3rem;
     margin-right: 3rem;
+    z-index: 9;
 }
 
 // HAMBURGER MENU
@@ -100,7 +101,7 @@ input#toggle {
     align-items: center;
     // position: absolute;
     h1 {
-        width: 30%;
+        width: 26rem;
     }
 }
 
@@ -108,5 +109,20 @@ input#toggle {
     .menu {
         width: 50%;
         right: -50%;
+    }
+}
+@media (max-width: 500px) {
+    .hero h1 {
+        width: 23rem;
+    }
+    .menu {
+        width: 80%;
+        right: -80%;
+    }
+}
+@media (max-width: 400px) {
+    .menu {
+        width: 100%;
+        right: -100%;
     }
 }

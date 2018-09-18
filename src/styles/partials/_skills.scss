@@ -27,3 +27,22 @@
         }
     }
 }
+
+@media (max-width: 640px) {
+    .skillsGrid figure {
+        width: calc(33.33% - 4rem);
+        &:last-child {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 460px) {
+    .skillsGrid figure {
+        width: calc(50% - 4rem);
+        &:last-child {
+            display: block;
+            text-align: center;
+        }
+    }
+}

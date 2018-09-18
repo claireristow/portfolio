@@ -97,3 +97,19 @@ p.logo {
         width: 60rem;
     }
 }
+
+@media (max-width: 690px) {
+    .wrapper {
+        width: 100%;
+    }
+
+    section {
+        padding: 5rem 0;
+    }
+}
+
+@media (max-width:460px) {
+    section {
+        padding: 2rem 0;
+    }
+}

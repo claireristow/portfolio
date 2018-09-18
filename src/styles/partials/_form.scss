@@ -67,3 +67,29 @@ input[type=submit] {
         width: 100%;
     }
 }
+
+@media (max-width: 660px) {
+    form {
+        padding: 1rem; 
+        input, text-area {
+            margin: 0.5rem 0;
+        }
+    }
+
+    .formBlurb {
+        padding: 1.5rem;
+        p {
+            margin: 0;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .formBlurb {
+        display: none;
+    }
+
+    form input[type=submit] {
+        align-self: center;
+    }
+}
