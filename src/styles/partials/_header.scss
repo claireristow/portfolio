@@ -105,25 +105,34 @@ input#toggle {
     }
     .ball {
         position: absolute;
-        top: 10%;
-        right: 30%;
+        top: 15%;
+        right: 32%;
         background: $secondary;
         width: 20rem;
         height: 20rem;
         border-radius: 50%;
         box-shadow: 0.2rem 0.2rem 0.8rem #2c2c2c;
-        animation: bounce 0.5s;
+        animation: bounce 0.7s;
         animation-direction: alternate;
-        animation-iteration-count: 5;
+        animation-iteration-count: 4;
     }
     @keyframes bounce {
         from { 
             transform: translate3d(0, 0, 0);
         }
         to {
-            transform: translate3d(0, 200px, 0);
+            transform: translate3d(0, 10rem, 0);
         }
+    }
 }
+
+@media (max-width: 940px) {
+    header {
+        height: calc(100vh - 3rem);
+    }
+    .hero .ball {
+        right: 20%;
+    }
 }
 
 @media (max-width: 750px) {
@@ -141,6 +150,10 @@ input#toggle {
     .sticky {
         margin: 0;
     }
+
+    .hero .ball {
+        right: 10%;
+    }
 }
 
 @media (max-width: 500px) {
@@ -156,5 +169,17 @@ input#toggle {
     .menu {
         width: 100%;
         right: -100%;
+    }
+
+    .hero {
+        .ball {
+            top: 30%;
+            right: 0;
+        }
+        @keyframes bounce {
+            to {
+                transform: translate3d(0, 10rem, 0);
+            }
+        }
     }
 }

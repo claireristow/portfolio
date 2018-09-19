@@ -8,6 +8,12 @@
             width: 50%;
             display: flex;
             flex-direction: column;
+            a {
+                color: black;
+                &:hover {
+                    color: $primary;
+                }
+            }
         }
         .projectImage {
             width: 50%;
@@ -105,6 +111,9 @@
         .projectImage {
             margin-top: 2rem;
             width: 50%;
+            h3 {
+                color: black;
+            }
         }
     }
 
@@ -141,7 +150,7 @@
     .projects {
         padding: 1rem 0.3rem;
         article {
-            margin:4rem 0;
+            margin:5rem 0;
         }
     }
     
@@ -158,6 +167,7 @@
 
     .builtWith p {
         padding: 0 0.5rem;
+        margin: 0.3rem 0;
     }
 }
 

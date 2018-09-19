@@ -1,5 +1,10 @@
-const hello = 'World';
-console.log(hello);
+
+//HAMBURGER MENU
+// close hamburger menu when an a tag is clicked
+$('.menu a').on('click touchstart', function() {
+    document.getElementById('toggle').checked = false;
+})
+
 
 // STICKY HEADER
 window.onscroll = function () { myFunction() };
@@ -15,19 +20,8 @@ function myFunction() {
     }
 }
 
-// animated transitions on scroll 
+
+// ANIMATED SCROLL
 $(function () {
     new WOW().init();
 });
-
-// When screen hits 940px, hide the h3 in projectContent and unhide it in projectImage
-
-const projectView = () => {
-    const deviceWidth = window.innerWidth;
-    if (deviceWidth < 940) {
-        document.querySelector('.projectContent h3').classList.add('hide');
-        document.querySelector('.projectImage h3').classList.remove('hide');
-    }
-}
-
-projectView();

@@ -19,9 +19,7 @@
         }
         svg {
             width: 6.5rem;
-            // filter: grayscale(100%);
             fill: $primary;
-            // color: black;
         }
         &:hover figcaption {
             color: $primary;
@@ -32,6 +30,12 @@
             color: white;
             transition: color 0.8s;
         }
+    }
+}
+
+@media (max-width: 940px) {
+    .skillsGrid figure figcaption {
+        color: $primary;
     }
 }
 
