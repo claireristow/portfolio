@@ -20,7 +20,6 @@ function myFunction() {
     }
 }
 
-
 // ANIMATED SCROLL
 $(function () {
     new WOW().init();
