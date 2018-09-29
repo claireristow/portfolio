@@ -1,7 +1,7 @@
 
 //HAMBURGER MENU
 // close hamburger menu when an a tag is clicked
-$('.menu a').on('click touchstart', function() {
+$('.menu a').on('click', function() {
     document.getElementById('toggle').checked = false;
 })
 
