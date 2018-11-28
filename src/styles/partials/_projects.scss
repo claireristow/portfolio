@@ -8,10 +8,10 @@
             width: 50%;
             display: flex;
             flex-direction: column;
-            a {
-                color: black;
+            .collaborators {
+                color: $primary;
                 &:hover {
-                    color: $primary;
+                    border-bottom: 0.1rem solid $primary;
                 }
             }
         }
