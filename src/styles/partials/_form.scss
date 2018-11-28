@@ -19,8 +19,6 @@ form {
     width: 70%;
     background: $primary;
     padding: 5rem;
-    display: flex;
-    flex-direction: column;
     input, textarea {
         width: 100%;
         font-size: 1.4rem;
@@ -29,6 +27,7 @@ form {
         margin: 1rem 0;
         padding: 1rem 1.5rem;
         color: white;
+        border-bottom: 0.2rem solid $primary;
         &::placeholder {
             color: $darkNeutral;
         }
@@ -36,13 +35,11 @@ form {
             opacity: 1;
         }
         &:focus {
+            outline: none;
             border-bottom: 0.2rem solid $darkNeutral;
+            background:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), $primary; 
         }
     }
-}
-
-textarea {
-    resize: none;
 }
 
 input[type=submit] {
