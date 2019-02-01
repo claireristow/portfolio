@@ -48,27 +48,9 @@
     }
 }
 
-// .blueDots {
-//     position: relative;
-//     &::before {
-//         content: url('../../assets/backgrounds/smallBlueDots.png');
-//         position: absolute;
-//         top: -100%;
-//         left: 0;
-//     }
-// }
-
-// .blueDots {
-//     position: relative;
-//     .dots {
-//         background: url('../../assets/backgrounds/smallBlueDots.png');
-//         width: 80rem;
-//         height: 50rem;
-//         position: absolute;
-//         top: -40%;
-//         // right: -40%;
-//     }
-// }
+p.button {
+    margin: 0;
+}
 
 .projectLinks {
     display: flex;

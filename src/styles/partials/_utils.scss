@@ -83,6 +83,12 @@ p.logo {
     }
 }
 
+.greyButton {
+    background: $textGrey;
+    color: black;
+    border: 0.2rem solid $textGrey;
+}
+
 .hide {
     display: none;
 }
