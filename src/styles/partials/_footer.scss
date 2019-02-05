@@ -26,7 +26,7 @@ nav li:last-child a {
 // SOCIAL
 
 .social a {
-    padding: 0.7rem 1rem;
+    padding: 0.6rem 1rem;
     margin: 0 0.5rem;
     background: white;
     border-radius: 50%;
@@ -38,6 +38,9 @@ nav li:last-child a {
     }
     i {
         color: $textGrey;
+    }
+    .hidden {
+        display: none;
     }
 }
 
